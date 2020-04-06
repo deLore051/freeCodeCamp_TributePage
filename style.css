@@ -1,0 +1,208 @@
+html {
+    /* Setting baseline for rem: 1rem = 10px */
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Gotu', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+  
+#main {
+    margin: 30px 30px 30px 30px;
+    padding: 10px;
+    background: #eeeeee;
+}
+  
+h1 {
+    font-size: 4rem;
+}
+  
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+a {
+   color:  #0000EE; 
+}
+  
+a:visited {
+    color: #551A8B; 
+}
+
+li{
+    margin: 0 30px auto;
+    padding: 30px 50px 30px 50px;;
+    text-align: left;
+}
+
+.containerMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "h h"
+        "img int"
+        "t-i t-i"
+        "f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: lightskyblue;
+}
+
+.img {
+    grid-area: img;
+    width: auto;
+    height: auto;
+    max-width: 900px;
+    background-color: rgb(231, 253, 253);
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-width: 835px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.intro {
+    grid-area: int;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgb(231, 253, 253);
+}
+
+#tribute-info {
+    grid-area: t-i;
+}
+
+.timeline-title {
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: lightskyblue;
+}
+
+.timeline-content {
+    padding: 30px 50px 30px 50px;
+    text-align: left;
+    background-color: rgb(231, 253, 253);
+}
+
+.inventions-title {
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: lightskyblue;
+}
+
+.inventions-content {
+    padding: 30px 50px 30px 50px;
+    text-align: left;
+    background-color: rgb(231, 253, 253);
+}
+
+.legends-title {
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: lightskyblue;
+}
+
+.legends-content {
+    padding: 30px 50px 30px 50px;
+    text-align: left;
+    background-color: rgb(231, 253, 253);
+}
+
+.footer {
+    grid-area: f;
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+@media (max-width: 900px) {
+    body {
+      font-size: 1.4rem;
+    }
+
+    #main {
+        margin: 5px 5px 5px 5px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    #img {
+      display: flex;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    #img-caption {
+        font-size: 1.4rem;
+    }
+
+    li {
+      margin: 0  auto;
+      padding: 5px 10px 5px 10px;;
+    }
+
+    .intro {
+      font-size: 1.4rem;
+      padding: 5px;
+    }
+
+    .timeline-title {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .timeline-content {
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .inventions-title {
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .inventions-content {
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .legends-title {
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .legends-content {
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .footer {
+        padding: 5px 10px 5px 10px;
+    }
+  }  
+
+
